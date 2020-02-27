@@ -1,0 +1,842 @@
+body {
+    background-color: #f8f9fa;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*--------------start section & sidebar--------------*/
+.siderbar_main {
+    width: 30%;
+    float: right;
+    overflow: hidden;
+    position: relative;
+    margin-top: 23px;
+    margin-left: 8px;
+}
+
+.Last_Updates {
+    width: 69%;
+    float: right;
+    overflow: hidden;
+    position: relative;
+    margin-top: 5px;
+}
+
+/*--------------end section & sidebar--------------*/
+
+
+/*start section movie archive*/
+.movie-archive{
+    margin-top: 50px;
+}
+.movie-archive-box{
+    background-color: #040b1b;
+    padding: 15px 20px 15px 20px;
+}
+.movie-archive-box .Updated-series {
+    float: right;
+}
+.movie-archive-box .Updated-series >span{
+    color: #fff;
+}
+.movie-archive-box .Login-archive{
+    float: left;
+}
+.movie-archive-box .Login-archive>a{
+    text-decoration: none;
+    color: #e42222;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border: 1px solid #f8f9fa;
+    background-color: #fff;
+    padding: 5px 13px 9px 20px;
+}
+.movies-box{
+    padding: 17px 0 1px 35px;
+    background-color: rgb(24, 31, 49);
+}
+.movies-box>ul{}
+.movies-box>ul>li{ display: inline-block}
+.movies-box>ul>li>a{}
+.movies-box ul li .hover:hover{
+    background: rgb(219,60,145);
+    background: -moz-linear-gradient(-45deg, rgba(219,60,145,1) 0%, rgba(254,235,82,1) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(219,60,145,1) 0%,rgba(254,235,82,1) 100%);
+    background: linear-gradient(135deg, rgba(219,60,145,1) 0%,rgba(254,235,82,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db3c91', endColorstr='#feeb52',GradientType=1 );
+
+}
+.movies-box>ul>li>a>img{
+    max-width: 100%;
+    max-height: 100%;
+    border: 3px solid #fff;
+    border-radius: 5px;
+}
+.movies-box>ul>li>a>img:hover{
+
+}
+
+
+.article-date{border: 1px solid #ded6d6;margin: 14px -5px 0 -23px;background-color: #f8f9fa;border-radius: 5px;padding: 15px 14px 9px 15px;}
+.article-date-item{}
+.article-date-item{}
+.article-date-item>i{}
+.article-date-item>i:before{}
+.article-date-item>span{
+    font-size: 16px;
+}
+.article-date-item>button{
+    font-size: 12px;
+}
+/*start section movie*/
+
+
+
+.best-movie {
+    margin-top: 20px;
+}
+
+.best-movie .post-title-info {
+    border-bottom: 5px dashed red;
+}
+
+.best-movie .post-title-info-name {
+}
+
+.best-movie .post-title-info-name > h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.best-movie .post-title-info-comment {
+}
+
+.best-movie .post-title-info-comment > i {
+    padding: 0 11px 0 0;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.best-movie .post-title-info-comment > span {
+}
+
+.best-movie .post-title-info-comment > .comment {
+}
+
+.best-movie .post-title-info-comment > .rate-imbd {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.best-movie-box {
+}
+
+.best-movie-box-item {
+}
+
+.best-movie-box-item > a {
+    text-decoration: none;
+}
+
+.best-movie-box-item > a > img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 21px;
+    border-radius: 5px;
+}
+
+.best-movie-box-item > ul {
+}
+
+.best-movie-box-item > ul > li {
+    border: 1px solid #ded6d6;
+    margin-top: 10px;
+    border-radius: 14px;
+    background-color: #f8faf9;
+    -moz-border-radius: 14px;
+    -o-border-radius: 14px;
+    -webkit-border-radius: 14px;
+    padding: 3px 14px 3px 0;
+}
+
+.best-movie-box-item > ul > li > div > .rate {
+    font-weight: bold;
+    padding: 0 0 0 12px;
+}
+
+.best-movie-box-item > ul > li > div > a {
+}
+
+.best-movie-box-item > ul > li > div > a {
+    text-decoration: none;
+}
+
+.best-movie-body {
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 23px 17px 12px 35px;
+    box-shadow: 0 10px 20px 0 rgba(241, 234, 234, 0.9);
+    -webkit-box-shadow: 0 10px 20px 0 rgba(241, 234, 234, 0.9);
+    -moz-box-shadow: 0 10px 20px 0 rgba(241, 234, 234, 0.9);
+    -o-box-shadow: 0 10px 20px 0 rgba(241, 234, 234, 0.9);
+}
+
+.best-movie .post-title-info-comment > i:before {
+    padding: 0 12px 4px 0;
+    color: red;
+    font-size: 17px;
+}
+
+.best-movie-box-item > ul > li > i {
+}
+
+.best-movie-box-item > ul > li > i:before {
+    color: red;
+}
+
+.star > i:before {
+    color: red;
+}
+
+.best-movie-box-item > ul > li > span {
+}
+
+.best-movie-box-item > ul > li > a {
+    text-decoration: none;
+}
+
+.actors {
+    border: 1px solid #ded6d6;
+    margin-top: 3px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    margin-right: 10px;
+    -webkit-border-radius: 4px;
+    padding: 3px 14px 3px 0;
+    background-color: #f8f9fa;
+}
+
+.actors > i {
+}
+
+.actors > i:before {
+    color: red
+}
+
+.actors > label {
+    font-weight: bold
+}
+
+.actors ul {
+    display: inline-block;
+    margin: 9px -28px -5px 0;
+}
+
+.actors ul > li {
+    display: inline-block;
+}
+
+.actors ul > li {
+}
+
+.actors ul > li a {
+    text-decoration: none;
+}
+
+.actors ul > li a:active {
+    color: red;
+}
+
+.movie-info-body {
+    border: 1px solid #ded6d6;
+    margin: 14px -5px 0 -23px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 15px 16px 0px 15px;
+}
+
+.movie-info {
+}
+
+.movie-info p {
+    line-height: 37px;
+}
+
+.movie-info p > span {
+}
+
+.movie-info p > span {
+    color: red;
+    font-weight: bold;
+}
+
+
+/*-----------------start section siderbar_main---------------*/
+.sidebar-box {
+    border: 1px solid #fff;
+    background-color: #fff;
+    padding: 0px 10px 6px 10px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 0 rgba(241, 234, 234, 0.9);
+    -webkit-box-shadow: 0 10px 20px 0 rgba(241, 234, 234, 0.9);
+    -moz-box-shadow: 0 10px 20px 0 rgba(241, 234, 234, 0.9);
+    -o-box-shadow: 0 10px 20px 0 rgba(241, 234, 234, 0.9);
+}
+
+.sidebar-box-header {
+}
+
+.sidebar-box-header > h3 {
+    font-size: 17px;
+    border-bottom: 5px dashed red;
+    padding: 0 0 10px 0;
+}
+
+.sidebar-box-body {
+}
+
+.sidebar-box-body .div-movie {
+    border: 1px solid #ded6d6;
+    border-radius: 6px;
+    text-align: center;
+    background-color: #f8faf9;
+    padding: 4px 0 0 0;
+    margin: 0 0 8px 0;
+}
+
+.sidebar-box-body .div-movie > label {font-size: 14px;}
+
+.sidebar-box-body ul {
+    margin: 0 -40px 0 -1px;
+}
+
+.sidebar-box-body ul > li {
+    border: 1px solid #ded6d6;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -o-border-radius: 6px;
+    text-align: center;
+    background-color: #f8faf9;
+    margin: 8px;
+    padding: 5px 0 5px 0;
+}
+
+.sidebar-box-body ul > li > a {
+    text-decoration: none;
+    color: #040b1b;
+    font-size: 12px;
+}
+
+.sidebar-box-body ul .serial {
+    display: inline-block;
+    width: 46%;
+    text-align: center;
+    background: rgb(248, 250, 249);
+    margin-top: 3px !important;
+    margin: 8px 3px;
+    border: 1px solid #ded6d6;
+    color: #FF6464;
+    cursor: pointer;
+}
+
+.sidebar-box-ser ul .serial-info {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.sidebar-box-ser ul .serial-info > a > img {
+    width: 90px;
+    margin-left: -25px;
+    position: relative;
+    top: 6px;
+    left: 34px;
+}
+
+.sidebar-box-ser ul .serial-info > section {
+}
+
+.sidebar-box-ser ul .serial-info > section > a {
+    text-decoration: none;
+}
+
+.sidebar-box-ser ul .serial-info > section > a > span {display: block;color: #040b1b;}
+
+.sidebar-box-ser ul .serial-info > section > a > label {
+    border: 1px solid #f8faf9;
+    background-color: #dbdbdb;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin: 7px 0 0 0;
+    color: #000;
+    padding: 5px 15px 5px 15px;
+}
+
+.sidebar-box-bg {
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -o-border-radius: 6px;
+    margin: 10px;
+    padding: 17px 0 0 0;
+}
+
+.box-ser {
+
+    border-bottom: 2px dashed #ded6d6;
+}
+.box-footer{margin-top:20px; }
+/*start section timer*/
+.timer{}
+
+/*------box scroll up-----------*/
+#back2Top {
+    width: 53px;
+    overflow: hidden;
+    height: 35px;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    bottom: 30px;
+    right: 10px;
+    background-color: #e0a800;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+#back2Top:hover {
+}
+
+#back2Top > i {
+    margin-right: 16px;
+}
+
+#back2Top > i:before {
+    color: #fff;
+    font-size: 10px;
+
+}
+
+/*------box scroll up-----------*/
+
+/*media screen*/
+
+@media screen and (min-width: 2560px) {
+    .main-box-reply {
+        margin-right: 5% !important;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .main-box-reply {
+        margin-right: 5% !important;
+    }
+
+}
+@media screen and (min-width: 1200px) {
+    .main-box-reply {
+        margin-right: 20% !important;
+    }
+
+
+}
+@media only screen and (min-width: 1026px)and(max-width: 1199px){
+    .sidebar-box-ser ul .serial-info > section > a > span{
+        font-size: 11px;
+    }
+
+}
+@media screen and (max-width: 1024px) {
+    .main-box-reply {
+        margin-right: 5% !important;
+    }
+
+    .Last_Updates {
+        width: unset;
+        float: none;
+    }
+
+    .siderbar_main {
+        width: unset;
+        float: none;
+        margin: 18px 0 0 0;
+    }
+}
+@media screen and (min-width: 992px) {
+    .main-box-reply {
+        margin-right: 20% !important;
+    }
+}
+
+@media (min-width: 985px) {
+    .main-box-reply {
+        margin-right: 20% !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .main-box-reply {
+        margin-right: 8% !important;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .best-movie-box-item > ul > li {
+        margin: 13px -37px 7px 0px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .main-box-reply {
+        margin-right: 20% !important;
+    }
+
+    .best-movie .post-title-info-name > h1 {
+        font-size: 15px !important;
+    }
+
+    .best-movie .post-title-info-comment > i {
+        font-size: 15px !important;
+    }
+
+    .best-movie .post-title-info-comment > .rate-imbd {
+        font-size: 15px !important;
+    }
+
+    .best-movie-box-item > ul > li > span {
+        font-size: 14px
+    }
+
+    .best-movie-box-item > ul > li > a {
+        font-size: 14px
+    }
+
+    .best-movie-box-item > ul > li > div > .rate {
+        font-size: 14px
+    }
+
+    .rt {
+        font-size: 14px
+    }
+
+    .actors ul > li a {
+        font-size: 14px
+    }
+
+    .actors > label {
+        font-size: 14px
+    }
+
+    .movie-info p {
+        font-size: 14px;
+        line-height: 29px
+    }
+
+    .link-down ul > li > .division {
+        font-size: 14px
+    }
+
+    .link-down ul > li > a {
+        font-size: 14px
+    }
+
+    .link-down ul > li > .format {
+        font-size: 14px
+    }
+
+    .link-down > i {
+        font-size: 14px;
+    }
+
+    .download-ser > i {
+        font-size: 14px
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .main-box-reply {
+        margin-right: 14% !important;
+    }
+
+    .download-ser {
+        margin-left: 36px;
+    }
+
+    .best-movie-box-item > ul > li > span {
+        font-size: 13px
+    }
+
+    .best-movie-box-item > ul > li > a {
+        font-size: 13px
+    }
+
+    .best-movie-box-item > ul > li > div > .rate {
+        font-size: 13px
+    }
+
+    .rt {
+        font-size: 13px
+    }
+
+    .actors ul > li a {
+        font-size: 13px
+    }
+
+    .actors > label {
+        font-size: 13px
+    }
+
+    .movie-info p {
+        font-size: 13px;
+        line-height: 29px
+    }
+
+    .link-down ul > li > .division {
+        font-size: 13px
+    }
+
+    .link-down ul > li > a {
+        font-size: 13px
+    }
+
+    .link-down ul > li > .format {
+        font-size: 13px
+    }
+
+    .link-down > i {
+        font-size: 13px;
+    }
+
+    .download-ser > i {
+        font-size: 13px
+    }
+
+    .user-text > p {
+        font-size: 11px !important;
+    }
+
+    .user-info > h2 {
+        font-size: 11px !important;
+    }
+
+    .user-info > span {
+        font-size: 11px;
+    }
+
+    .main-comment-box-form > form > span {
+        font-size: 11px;
+
+    }
+
+    .sidebar-box-ser ul .serial-info {
+
+
+    }
+    .sidebar-box-ser ul .ses-info{
+        margin: 0px 4px 0 0;
+        padding: 0 !important;
+    }
+    .sidebar-box-ser ul .serial-info > section > a > label{font-size: 13px}
+
+    .sidebar-box-ser ul .serial-info > section > a > span {
+        font-size: 13px;
+    }
+
+    .sidebar-box-ser ul .serial-info > a > img {
+        margin-top: 20px
+    }
+
+    .main-comment-box-header > h3 {
+        font-size: 16px
+    }
+
+    .user-comment > span {
+        font-size: 13px
+    }
+    .movie-archive-box .Updated-series >span{
+        font-size: 12px;
+    }
+    .movie-archive-box .Login-archive>a{font-size: 11px}
+    .end-footer-item > p{font-size: 12px}
+}
+
+@media screen and (max-width: 375px) {
+    .main-box-reply {
+        margin-right: 20% !important;
+    }
+
+    .best-movie .post-title-info-name > h1 {
+        font-size: 11px !important;
+        margin: 5px 0 0 0;
+    }
+
+    .best-movie .post-title-info-comment > i {
+        font-size: 11px !important;
+    }
+
+    .best-movie .post-title-info-comment > .rate-imbd {
+        font-size: 11px !important;
+    }
+
+    .best-movie-box-item > ul > li > span {
+        font-size: 12px
+    }
+
+    .best-movie-box-item > ul > li > a {
+        font-size: 12px
+    }
+
+    .best-movie-box-item > ul > li > div > .rate {
+        font-size: 12px
+    }
+
+    .rt {
+        font-size: 12px
+    }
+
+    .actors ul > li a {
+        font-size: 12px
+    }
+
+    .actors > label {
+        font-size: 12px
+    }
+    .sidebar-box-body .div-movie > label{font-size: 13px}
+    .sidebar-box-body ul .serial{width: 45%}
+}
+
+
+
+@media screen and (max-width: 320px) {
+    .main-box-reply {
+        margin-right: 20% !important;
+    }
+
+    .movie-info p {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .download-ser > i {
+        font-size: 9px;
+    }
+
+    .link-down ul > li > .division {
+        font-size: 11px;
+    }
+
+    .link-down ul > li > .format {
+        font-size: 11px;
+    }
+
+    .link-down ul > li > a {
+        font-size: 11px
+    }
+
+    .link-down > i {
+        font-size: 8px
+    }
+
+    .search-sub > a {
+        font-size: 13px;
+    }
+
+    .publication-date > span {
+        font-size: 13px;
+        margin-right: 18px
+    }
+
+    .pbc-days-box-item > .day {
+        padding: 5px 14px 7px 13px;
+        font-size: 14px;
+    }
+
+    .pbc-days-box-item > .count {
+        padding: 5px 14px 7px 13px;
+        font-size: 14px;
+    }
+
+    .pbc-days-box-item {
+        display: block;
+        margin-right: 32px;
+        margin-top: 10px
+    }
+
+    .watch-trailer > div > span {
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .sidebar-box-header > h3 {
+        font-size: 13px
+    }
+
+    .sidebar-box-body .div-movie > label {
+        font-size: 12px;
+    }
+
+    .sidebar-box-body ul > li > a {
+        font-size: 13px
+    }
+
+    .sidebar-box-body ul .serial {
+        width: 45%
+    }
+
+    .sidebar-box-ser ul .serial-info {
+
+
+    }
+
+    .sidebar-box-ser ul .serial-info > section > a > span {
+        font-size: 11px;
+    }
+
+    .sidebar-box-ser ul .serial-info > a > img {
+        margin-top: 20px;
+        width: 87px;
+    }
+
+    .main-comment-box-header > h3 {
+        font-size: 16px
+    }
+
+    .user-comment > span {
+        font-size: 13px
+    }
+
+    .sidebar-box-ser ul .serial-info > section > a > label {
+        font-size: 12px
+    }
+    .movie-archive-box .Updated-series >span{font-size: 10px}
+    .movie-archive-box .Login-archive>a{font-size: 8px;padding: 5px 6px 8px 11px;}
+    .best-movie .post-title-info-comment > i{font-size: 10px!important;}
+    .best-movie .post-title-info-name > h1{font-size: 9px !important;}
+}

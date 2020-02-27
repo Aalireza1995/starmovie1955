@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'sainaicons';
+  src:  url('fonts/SAINAFont/sainaiconV1.3.eot?x3j82p');
+  src:  url('fonts/SAINAFont/sainaiconV1.3.eot?x3j82p#iefix') format('embedded-opentype'), url('fonts/SAINAFont/sainaiconV1.3.ttf?x3j82p') format('truetype'), url('fonts/SAINAFont/sainaiconV1.3.woff?x3j82p') format('woff'), url('fonts/SAINAFont/sainaiconV1.3.svg?x3j82p#sainaicon') format('svg');
+  font-weight: light;  font-style: normal;  font-display: block;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'sainaicons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-about:before{content:"\e900";color:#5e7582}
+.icon-aparat:before{content:"\e901";color:#5e7582}
+.icon-arrow-bottom:before{content:"\e902";color:#5e7582}
+.icon-arrow-left:before{content:"\e903";color:#5e7582}
+.icon-arrow-right:before{content:"\e904";color:#5e7582}
+.icon-arrow-up:before{content:"\e905";color:#5e7582}
+.icon-article:before{content:"\e906";color:#5e7582}
+.icon-attachment:before{content:"\e907";color:#5e7582}
+.icon-calender:before{content:"\e908";color:#5e7582}
+.icon-cardiovascular:before{content:"\e909";color:#5e7582}
+.icon-chat:before{content:"\e90a";color:#5e7582}
+.icon-clinic:before{content:"\e90b";color:#5e7582}
+.icon-clock:before{content:"\e90c";color:#5e7582}
+.icon-close:before{content:"\e90d";color:#5e7582}
+.icon-comment:before{content:"\e90e";color:#5e7582}
+.icon-delete:before{content:"\e90f";color:#5e7582}
+.icon-dentistry:before{content:"\e910";color:#5e7582}
+.icon-download:before{content:"\e911";color:#5e7582}
+.icon-drugs:before{content:"\e912";color:#5e7582}
+.icon-edit:before{content:"\e913";color:#5e7582}
+.icon-empty-heart:before{content:"\e914";color:#5e7582}
+.icon-empty-star:before{content:"\e915";color:#5e7582}
+.icon-End-chat:before{content:"\e916";color:#5e7582}
+.icon-facebook:before{content:"\e917";color:#5e7582}
+.icon-fiil-manager:before{content:"\e918";color:#5e7582}
+.icon-fill-clock:before{content:"\e919";color:#5e7582}
+.icon-fill-heart:before{content:"\e91a";color:#5e7582}
+.icon-fill-location:before{content:"\e91b";color:#5e7582}
+.icon-fill-phone:before{content:"\e91c";color:#5e7582}
+.icon-fill-play:before{content:"\e91d";color:#5e7582}
+.icon-fill-relation:before{content:"\e91e";color:#5e7582}
+.icon-fill-star:before{content:"\e91f";color:#5e7582}
+.icon-fill-umbrella:before{content:"\e920";color:#5e7582}
+.icon-filter:before{content:"\e921";color:#5e7582}
+.icon-germs:before{content:"\e922";color:#5e7582}
+.icon-glands:before{content:"\e923";color:#5e7582}
+.icon-googleplus:before{content:"\e924";color:#5e7582}
+.icon-guarantee:before{content:"\e925";color:#5e7582}
+.icon-home:before{content:"\e926";color:#5e7582}
+.icon-hospital:before{content:"\e927";color:#5e7582}
+.icon-hum-side-menu:before{content:"\e928";color:#5e7582}
+.icon-info:before{content:"\e929";color:#5e7582}
+.icon-instagram:before{content:"\e92a";color:#5e7582}
+.icon-internal:before{content:"\e92b";color:#5e7582}
+.icon-kidney-tract:before{content:"\e92c";color:#5e7582}
+.icon-laboratory:before{content:"\e92d";color:#5e7582}
+.icon-leaf:before{content:"\e92e";color:#5e7582}
+.icon-like:before{content:"\e92f";color:#5e7582}
+.icon-link:before{content:"\e930";color:#5e7582}
+.icon-linkin:before{content:"\e931";color:#5e7582}
+.icon-list:before{content:"\e932";color:#5e7582}
+.icon-Location:before{content:"\e933";color:#5e7582}
+.icon-logout:before{content:"\e934";color:#5e7582}
+.icon-mail:before{content:"\e935";color:#5e7582}
+.icon-megaphone:before{content:"\e936";color:#5e7582}
+.icon-menu:before{content:"\e937";color:#5e7582}
+.icon-more-1:before{content:"\e938";color:#5e7582}
+.icon-more-2:before{content:"\e939";color:#5e7582}
+.icon-nutrition:before{content:"\e93a";color:#5e7582}
+.icon-obstetrics:before{content:"\e93b";color:#5e7582}
+.icon-ophthalmology:before{content:"\e93c";color:#5e7582}
+.icon-pharmacy:before{content:"\e93d";color:#5e7582}
+.icon-phone:before{content:"\e93e";color:#5e7582}
+.icon-play:before{content:"\e93f";color:#5e7582}
+.icon-podcast:before{content:"\e940";color:#5e7582}
+.icon-psychology:before{content:"\e941";color:#5e7582}
+.icon-question-chat:before{content:"\e942";color:#5e7582}
+.icon-question-sign:before{content:"\e943";color:#5e7582}
+.icon-refresh:before{content:"\e944";color:#5e7582}
+.icon-search:before{content:"\e945";color:#5e7582}
+.icon-send-button:before{content:"\e946";color:#5e7582}
+.icon-settings-1:before{content:"\e947";color:#5e7582}
+.icon-sexual:before{content:"\e948";color:#5e7582}
+.icon-share:before{content:"\e949";color:#5e7582}
+.icon-skin-hair:before{content:"\e94a";color:#5e7582}
+.icon-speaker:before{content:"\e94b";color:#5e7582}
+.icon-stethoscope:before{content:"\e94c";color:#5e7582}
+.icon-stopwatch:before{content:"\e94d";color:#5e7582}
+.icon-study:before{content:"\e94e";color:#5e7582}
+.icon-success:before{content:"\e94f";color:#5e7582}
+.icon-support:before{content:"\e950";color:#5e7582}
+.icon-telegram:before{content:"\e951";color:#5e7582}
+.icon-twitter:before{content:"\e952";color:#5e7582}
+.icon-upload:before{content:"\e953";color:#5e7582}
+.icon-user:before{content:"\e954";color:#5e7582}
+.icon-video:before{content:"\e955";color:#5e7582}
+.icon-visibility-button:before{content:"\e956";color:#5e7582}
+.icon-warning:before{content:"\e957";color:#5e7582}
+.icon-website:before{content:"\e958";color:#5e7582}
+.icon-x-ray:before{content:"\e959";color:#5e7582}

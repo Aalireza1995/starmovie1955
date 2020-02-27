@@ -1,0 +1,1057 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>star movie home</title>
+
+    <link rel="stylesheet" href="themes/_shared/font-drsaina.css" type="text/css"/>
+    <link rel="stylesheet" href="themes/_shared/bootstrap-rtl.min.css" type="text/css"/>
+    <link rel="stylesheet" href="themes/_shared/font_IRANSans.css" type="text/css"/>
+
+
+    <link rel="stylesheet" href="theme/css/default.css">
+    <link rel="stylesheet" href="theme/css/header-footer.css">
+    <link rel="stylesheet" href="theme/css/magicscroll.css" type="text/css">
+
+
+
+</head>
+<body>
+
+
+<Header>
+    <div class="menu-header">
+        <div class="container">
+            <div class="menu-box-header row ">
+                <div class=" box-logo  ">
+                    <a href="#" class="">
+                        <span class="d-sm-inline-block d-md-none d-lg-none d-xl-none icon icon-hum-side-menu"
+                              onclick="openNav()"></span>
+                        <img src="theme/images/logo.svg" alt=""/>
+                    </a>
+                </div>
+                <nav class="">
+                    <a href="#"
+                       class="icon icon-hum-side-menu menu d-sm-none d-none  d-md-inline-block d-lg-inline-block d-xl-inline-block "
+                       onclick="openNav()">منو</a>
+                    <ol class="d-none">
+                        <li><a href="#">خانه</a></li>
+                        <li><a href="#">آرشیو</a></li>
+                        <li><a href="#">عضویت</a></li>
+                        <li><a href="#">تماس با ما</a></li>
+                    </ol>
+                </nav>
+
+                <div class="form-box d-none d-sm-none  d-md-inline-block d-lg-inline-block d-xl-inline-block">
+                    <form action="">
+
+                        <input type="text" class=" search " style="width: unset">
+                        <input type="button" class="btn icon icon-search">
+                        <i class="icon icon-search"></i>
+                    </form>
+                </div>
+                <div class="menu-box form-box d-none d-sm-none  d-md-none d-lg-inline-block d-xl-inline-block">
+                    <div class="menu-box-item watch-list"><a href="#">لیست فیلم ها</a></div>
+                    <div class="menu-box-item sign-in"><a href="#"
+                                                          onclick="document.getElementById('id01').style.display='block'"
+                                                          style="width:auto;">عضویت</a></div>
+                    <div class="menu-box-item movie-star"><a href="#">استار مووی</a></div>
+                </div>
+
+            </div>
+            <div class="clearfix sign-in-mobile">
+                <div><a class=" d-sm-inline-block d-md-inline-block d-lg-none d-xl-none float-left s-mobile"
+                        onclick="document.getElementById('id01').style.display='block'" style="width:auto;">عضویت</a>
+                </div>
+                <div>
+                    <a class=" d-sm-inline-block d-md-none d-lg-none d-xl-none  float-left icon icon-search search" id="div"></a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <form action="" id="btnout" style="display: none;" class="form-search">
+        <input type="search" placeholder="جستجو کنبد">
+        <button >جستجو کنید</button>
+    </form>
+    <!--    start sectio navigation menu-->
+    <div id="mySidenav" class="sidenav">
+        <div class="container">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span class="icon icon-close "
+                                                                                     id="close"></span></a>
+
+            <div class="row">
+                <div class="col-md-3 box-nav-menu">
+                    <i class="icon icon-video"></i>
+                    <label>
+                        فیلم ها
+                    </label>
+                    <ul>
+                        <li><a href="#">About</a>
+                        </li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Clients</a></li>
+                        <li><a href="#">contact</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3 box-nav-menu">
+                    <label>سریال ها</label>
+                    <ul>
+                        <li><a href="#">About</a>
+                        </li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Clients</a></li>
+                        <li><a href="#">contact</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3 box-nav-menu">
+                    <label>جوایز</label>
+                    <ul>
+                        <li><a href="#">About</a>
+                        </li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Clients</a></li>
+                        <li><a href="#">contact</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3 box-nav-menu">
+                    <label>TV show</label>
+                    <ul>
+                        <li><a href="#">About</a>
+                        </li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Clients</a></li>
+                        <li><a href="#">contact</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!--    start section sign-->
+    <!--    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>-->
+
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="theme/images/user-image.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit">Login</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+            <div class="container clearfix" style="">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn float-left">Cancel
+                </button>
+                <span class="psw float-right">?Forgot <a href="#">password</a></span>
+            </div>
+        </form>
+    </div>
+
+
+</Header>
+
+<main>
+    <div class="container">
+        <section>
+            <div class="movie-archive">
+                <div class="container">
+
+                    <div class="movie-archive-box clearfix">
+                        <div class="Updated-series">
+                            <span>اخرین فیلم سریال های بروز شده</span>
+                        </div>
+                        <div class="Login-archive ">
+                            <a href="#">ورود به آرشیو</a>
+                        </div>
+                    </div>
+                    <div class="movies-box ">
+                        <div class="MagicScroll" data-options="mode: carousel; height: 200px;">
+                            <a href=""> <img src="theme/images/Homeland-Poster.jpg" /></a>
+                            <a href=""> <img src="theme/images/Homeland-Poster.jpg" /></a>
+                            <a href=""> <img src="theme/images/Homeland-Poster.jpg" /></a>
+                            <a href=""> <img src="theme/images/Homeland-Poster.jpg" /></a>
+                            <a href=""> <img src="theme/images/Homeland-Poster.jpg" /></a>
+                            <a href=""> <img src="theme/images/Homeland-Poster.jpg" /></a>
+                            <a href=""> <img src="theme/images/Homeland-Poster.jpg" /></a>
+
+
+                        </div>
+                    </div>
+                    <!--            start section tow-->
+
+                    <div class="movie-archive-box clearfix">
+                        <div class="Updated-series">
+                            <span>فیلم پیشنهادی استار مووی به شما</span>
+                        </div>
+                        <div class="Login-archive ">
+                            <a href="#">ورود به آرشیو</a>
+                        </div>
+                    </div>
+                    <div class="movies-box ">
+                        <div class="MagicScroll" data-options="mode: carousel; height: 200px;">
+                            <a href=""> <img src="theme/images/Homeland-Poster.jpg" /></a>
+                            <a href=""> <img src="theme/images/Homeland-Poster.jpg" /></a>
+                            <a href=""> <img src="theme/images/Homeland-Poster.jpg" /></a>
+                            <a href=""> <img src="theme/images/Homeland-Poster.jpg" /></a>
+                            <a href=""> <img src="theme/images/Homeland-Poster.jpg" /></a>
+                            <a href=""> <img src="theme/images/Homeland-Poster.jpg" /></a>
+                            <a href=""> <img src="theme/images/Homeland-Poster.jpg" /></a>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="Last_Updates">
+
+            <div class="best-movie">
+                <div class="container">
+                    <div class="best-movie-body">
+                        <div class="post-title-info clearfix">
+                            <div class="post-title-info-name float-right">
+                                <h1>دانلود سریال Legacies</h1>
+                            </div>
+                            <div class="post-title-info-comment float-left">
+                                <i class="icon icon-comment">comment:</i>
+                                <span class="comment"></span>
+                                <span class="rate-imbd">IMBb</span>
+                            </div>
+                        </div>
+
+                        <div class="best-movie-box row">
+                            <div class="best-movie-box-item col-12 col-md-4 col-lg-4 col-xl-4">
+                                <a href="#">
+                                    <img src="theme/images/legaseas-ser.png" alt="">
+                                </a>
+                            </div>
+                            <div class="best-movie-box-item col-12 col-md-8 col-lg-8 col-xl-8">
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-camera"></i>
+                                        <span>سال ساخت :</span>
+                                        <a href="#">(-2018)</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-flag"></i>
+                                        <span>ژانر :</span>
+                                        <a href="#">ماجراجویی،درام،فانتزی</a>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="float-right">
+                                            <i class="fa fa-star-half-empty star"></i>
+                                            <span class="rt">امتیاز :</span>
+                                            <a href="#" class="rt">7.5:10</a>
+                                        </div>
+
+                                        <div class="float-left">
+                                            <span class="rate">imbd</span>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-television"></i>
+                                        <span>کیفیت:</span>
+                                        <a href="#">WEB-DL HDTV</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-globe"></i>
+                                        <span> کشور سازنده :</span>
+                                        <a href="#">UK</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check-circle"></i>
+                                        <span>وضعیت پخش :</span>
+                                        <a href="#">در حال پخش</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-coffee"></i>
+                                        <span>زمان پخش :</span>
+                                        <a href="#">NA</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-user"></i>
+                                        <span>کارگردان :</span>
+                                        <a href="#">alireza</a>
+                                    </li>
+
+
+                                </ul>
+
+                            </div>
+                            <div class="actors col-12 d-block">
+                                <i class="fa fa-users"></i>
+                                <label> بازیگران :</label>
+                                <ul>
+                                    <li><a href="#">Philip Winchester</a></li>
+                                    <li><a href="#">-Sullivan Stapleton</a></li>
+                                    <li><a href="#">-Michelle Lukes</a></li>
+                                    <li><a href="#">-Alireza Akbarzadeh</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="movie-info-body">
+                            <div class="movie-info">
+                                <p><span>خلاصه داستان:</span> در ادامه زنده نگه داشتن
+                                    سنت سریال های خاطرات یک خون آشام (The Vampire Diaries) و اصیل ها (The Originals) ....
+
+                            </div>
+
+                        </div>
+                        <div class="article-date clearfix">
+                            <div class="article-date-item float-right">
+                                <i class="icon icon-clock"></i>
+                                <span>چهار شنبه 19فوریه 2020، 11:30</span>
+                            </div>
+                            <div class="article-date-item float-left">
+                                <button class="btn btn-danger">ادامه مطلب</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="best-movie">
+                <div class="container">
+                    <div class="best-movie-body">
+                        <div class="post-title-info clearfix">
+                            <div class="post-title-info-name float-right">
+                                <h1>دانلود سریال Legacies</h1>
+                            </div>
+                            <div class="post-title-info-comment float-left">
+                                <i class="icon icon-comment">comment:</i>
+                                <span class="comment"></span>
+                                <span class="rate-imbd">IMBb</span>
+                            </div>
+                        </div>
+
+                        <div class="best-movie-box row">
+                            <div class="best-movie-box-item col-12 col-md-4 col-lg-4 col-xl-4">
+                                <a href="#">
+                                    <img src="theme/images/legaseas-ser.png" alt="">
+                                </a>
+                            </div>
+                            <div class="best-movie-box-item col-12 col-md-8 col-lg-8 col-xl-8">
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-camera"></i>
+                                        <span>سال ساخت :</span>
+                                        <a href="#">(-2018)</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-flag"></i>
+                                        <span>ژانر :</span>
+                                        <a href="#">ماجراجویی،درام،فانتزی</a>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="float-right">
+                                            <i class="fa fa-star-half-empty star"></i>
+                                            <span class="rt">امتیاز :</span>
+                                            <a href="#" class="rt">7.5:10</a>
+                                        </div>
+
+                                        <div class="float-left">
+                                            <span class="rate">imbd</span>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-television"></i>
+                                        <span>کیفیت:</span>
+                                        <a href="#">WEB-DL HDTV</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-globe"></i>
+                                        <span> کشور سازنده :</span>
+                                        <a href="#">UK</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check-circle"></i>
+                                        <span>وضعیت پخش :</span>
+                                        <a href="#">در حال پخش</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-coffee"></i>
+                                        <span>زمان پخش :</span>
+                                        <a href="#">NA</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-user"></i>
+                                        <span>کارگردان :</span>
+                                        <a href="#">alireza</a>
+                                    </li>
+
+
+                                </ul>
+
+                            </div>
+                            <div class="actors col-12 d-block">
+                                <i class="fa fa-users"></i>
+                                <label> بازیگران :</label>
+                                <ul>
+                                    <li><a href="#">Philip Winchester</a></li>
+                                    <li><a href="#">-Sullivan Stapleton</a></li>
+                                    <li><a href="#">-Michelle Lukes</a></li>
+                                    <li><a href="#">-Alireza Akbarzadeh</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="movie-info-body">
+                            <div class="movie-info">
+                                <p><span>خلاصه داستان:</span> در ادامه زنده نگه داشتن
+                                    سنت سریال های خاطرات یک خون آشام (The Vampire Diaries) و اصیل ها (The Originals) ....
+
+                            </div>
+
+                        </div>
+                        <div class="article-date clearfix">
+                            <div class="article-date-item float-right">
+                                <i class="icon icon-clock"></i>
+                                <span>چهار شنبه 19فوریه 2020، 11:30</span>
+                            </div>
+                            <div class="article-date-item float-left">
+                                <button class="btn btn-danger">ادامه مطلب</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="best-movie">
+                <div class="container">
+                    <div class="best-movie-body">
+                        <div class="post-title-info clearfix">
+                            <div class="post-title-info-name float-right">
+                                <h1>دانلود سریال Legacies</h1>
+                            </div>
+                            <div class="post-title-info-comment float-left">
+                                <i class="icon icon-comment">comment:</i>
+                                <span class="comment"></span>
+                                <span class="rate-imbd">IMBb</span>
+                            </div>
+                        </div>
+
+                        <div class="best-movie-box row">
+                            <div class="best-movie-box-item col-12 col-md-4 col-lg-4 col-xl-4">
+                                <a href="#">
+                                    <img src="theme/images/legaseas-ser.png" alt="">
+                                </a>
+                            </div>
+                            <div class="best-movie-box-item col-12 col-md-8 col-lg-8 col-xl-8">
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-camera"></i>
+                                        <span>سال ساخت :</span>
+                                        <a href="#">(-2018)</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-flag"></i>
+                                        <span>ژانر :</span>
+                                        <a href="#">ماجراجویی،درام،فانتزی</a>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="float-right">
+                                            <i class="fa fa-star-half-empty star"></i>
+                                            <span class="rt">امتیاز :</span>
+                                            <a href="#" class="rt">7.5:10</a>
+                                        </div>
+
+                                        <div class="float-left">
+                                            <span class="rate">imbd</span>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-television"></i>
+                                        <span>کیفیت:</span>
+                                        <a href="#">WEB-DL HDTV</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-globe"></i>
+                                        <span> کشور سازنده :</span>
+                                        <a href="#">UK</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check-circle"></i>
+                                        <span>وضعیت پخش :</span>
+                                        <a href="#">در حال پخش</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-coffee"></i>
+                                        <span>زمان پخش :</span>
+                                        <a href="#">NA</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-user"></i>
+                                        <span>کارگردان :</span>
+                                        <a href="#">alireza</a>
+                                    </li>
+
+
+                                </ul>
+
+                            </div>
+                            <div class="actors col-12 d-block">
+                                <i class="fa fa-users"></i>
+                                <label> بازیگران :</label>
+                                <ul>
+                                    <li><a href="#">Philip Winchester</a></li>
+                                    <li><a href="#">-Sullivan Stapleton</a></li>
+                                    <li><a href="#">-Michelle Lukes</a></li>
+                                    <li><a href="#">-Alireza Akbarzadeh</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="movie-info-body">
+                            <div class="movie-info">
+                                <p><span>خلاصه داستان:</span> در ادامه زنده نگه داشتن
+                                    سنت سریال های خاطرات یک خون آشام (The Vampire Diaries) و اصیل ها (The Originals) ....
+
+                            </div>
+
+                        </div>
+                        <div class="article-date clearfix">
+                            <div class="article-date-item float-right">
+                                <i class="icon icon-clock"></i>
+                                <span>چهار شنبه 19فوریه 2020، 11:30</span>
+                            </div>
+                            <div class="article-date-item float-left">
+                                <button class="btn btn-danger">ادامه مطلب</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="best-movie">
+                <div class="container">
+                    <div class="best-movie-body">
+                        <div class="post-title-info clearfix">
+                            <div class="post-title-info-name float-right">
+                                <h1>دانلود سریال Legacies</h1>
+                            </div>
+                            <div class="post-title-info-comment float-left">
+                                <i class="icon icon-comment">comment:</i>
+                                <span class="comment"></span>
+                                <span class="rate-imbd">IMBb</span>
+                            </div>
+                        </div>
+
+                        <div class="best-movie-box row">
+                            <div class="best-movie-box-item col-12 col-md-4 col-lg-4 col-xl-4">
+                                <a href="#">
+                                    <img src="theme/images/legaseas-ser.png" alt="">
+                                </a>
+                            </div>
+                            <div class="best-movie-box-item col-12 col-md-8 col-lg-8 col-xl-8">
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-camera"></i>
+                                        <span>سال ساخت :</span>
+                                        <a href="#">(-2018)</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-flag"></i>
+                                        <span>ژانر :</span>
+                                        <a href="#">ماجراجویی،درام،فانتزی</a>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="float-right">
+                                            <i class="fa fa-star-half-empty star"></i>
+                                            <span class="rt">امتیاز :</span>
+                                            <a href="#" class="rt">7.5:10</a>
+                                        </div>
+
+                                        <div class="float-left">
+                                            <span class="rate">imbd</span>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-television"></i>
+                                        <span>کیفیت:</span>
+                                        <a href="#">WEB-DL HDTV</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-globe"></i>
+                                        <span> کشور سازنده :</span>
+                                        <a href="#">UK</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check-circle"></i>
+                                        <span>وضعیت پخش :</span>
+                                        <a href="#">در حال پخش</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-coffee"></i>
+                                        <span>زمان پخش :</span>
+                                        <a href="#">NA</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-user"></i>
+                                        <span>کارگردان :</span>
+                                        <a href="#">alireza</a>
+                                    </li>
+
+
+                                </ul>
+
+                            </div>
+                            <div class="actors col-12 d-block">
+                                <i class="fa fa-users"></i>
+                                <label> بازیگران :</label>
+                                <ul>
+                                    <li><a href="#">Philip Winchester</a></li>
+                                    <li><a href="#">-Sullivan Stapleton</a></li>
+                                    <li><a href="#">-Michelle Lukes</a></li>
+                                    <li><a href="#">-Alireza Akbarzadeh</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="movie-info-body">
+                            <div class="movie-info">
+                                <p><span>خلاصه داستان:</span> در ادامه زنده نگه داشتن
+                                    سنت سریال های خاطرات یک خون آشام (The Vampire Diaries) و اصیل ها (The Originals) ....
+
+                            </div>
+
+                        </div>
+                        <div class="article-date clearfix">
+                            <div class="article-date-item float-right">
+                                <i class="icon icon-clock"></i>
+                                <span>چهار شنبه 19فوریه 2020، 11:30</span>
+                            </div>
+                            <div class="article-date-item float-left">
+                                <button class="btn btn-danger">ادامه مطلب</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="best-movie">
+                <div class="container">
+                    <div class="best-movie-body">
+                        <div class="post-title-info clearfix">
+                            <div class="post-title-info-name float-right">
+                                <h1>دانلود سریال Legacies</h1>
+                            </div>
+                            <div class="post-title-info-comment float-left">
+                                <i class="icon icon-comment">comment:</i>
+                                <span class="comment"></span>
+                                <span class="rate-imbd">IMBb</span>
+                            </div>
+                        </div>
+
+                        <div class="best-movie-box row">
+                            <div class="best-movie-box-item col-12 col-md-4 col-lg-4 col-xl-4">
+                                <a href="#">
+                                    <img src="theme/images/legaseas-ser.png" alt="">
+                                </a>
+                            </div>
+                            <div class="best-movie-box-item col-12 col-md-8 col-lg-8 col-xl-8">
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-camera"></i>
+                                        <span>سال ساخت :</span>
+                                        <a href="#">(-2018)</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-flag"></i>
+                                        <span>ژانر :</span>
+                                        <a href="#">ماجراجویی،درام،فانتزی</a>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="float-right">
+                                            <i class="fa fa-star-half-empty star"></i>
+                                            <span class="rt">امتیاز :</span>
+                                            <a href="#" class="rt">7.5:10</a>
+                                        </div>
+
+                                        <div class="float-left">
+                                            <span class="rate">imbd</span>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-television"></i>
+                                        <span>کیفیت:</span>
+                                        <a href="#">WEB-DL HDTV</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-globe"></i>
+                                        <span> کشور سازنده :</span>
+                                        <a href="#">UK</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-check-circle"></i>
+                                        <span>وضعیت پخش :</span>
+                                        <a href="#">در حال پخش</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-coffee"></i>
+                                        <span>زمان پخش :</span>
+                                        <a href="#">NA</a>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-user"></i>
+                                        <span>کارگردان :</span>
+                                        <a href="#">alireza</a>
+                                    </li>
+
+
+                                </ul>
+
+                            </div>
+                            <div class="actors col-12 d-block">
+                                <i class="fa fa-users"></i>
+                                <label> بازیگران :</label>
+                                <ul>
+                                    <li><a href="#">Philip Winchester</a></li>
+                                    <li><a href="#">-Sullivan Stapleton</a></li>
+                                    <li><a href="#">-Michelle Lukes</a></li>
+                                    <li><a href="#">-Alireza Akbarzadeh</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="movie-info-body">
+                            <div class="movie-info">
+                                <p><span>خلاصه داستان:</span> در ادامه زنده نگه داشتن
+                                    سنت سریال های خاطرات یک خون آشام (The Vampire Diaries) و اصیل ها (The Originals) ....
+
+                            </div>
+
+                        </div>
+                        <div class="article-date clearfix">
+                            <div class="article-date-item float-right">
+                                <i class="icon icon-clock"></i>
+                                <span>چهار شنبه 19فوریه 2020، 11:30</span>
+                            </div>
+                            <div class="article-date-item float-left">
+                                <button class="btn btn-danger">ادامه مطلب</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <aside class="siderbar_main">
+            <div class="container">
+                <div class="sidebar-box">
+                    <div class="sidebar-box-bg">
+                        <div class="sidebar-box-header">
+                            <h3>دسته بندی ها</h3>
+
+
+                        </div>
+                        <div class="sidebar-box-body">
+                            <div class="div-movie"><label for="">فیلم ها</label></div>
+                            <ul>
+                                <li><a href="#">انیمیشن </a></li>
+                                <li><a href="#">فیلم ایرانی</a></li>
+                                <li><a href="#">فیلم خارجی</a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-box-body  clearfix">
+                            <div class="div-movie"><label for="">سریال ها</label></div>
+                            <ul>
+                                <li class="serial "><a href="#">خارجی </a></li>
+                                <li class="serial"><a href="#">ایرانی</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="sidebar-box-body clearfix">
+                            <div class="div-movie"><label for="">برترین فیلم و سریال بر اساس سال انتشار</label></div>
+                            <ul>
+                                <li class="serial "><a href="#"> فیلم های سال 2010 </a></li>
+                                <li class="serial"><a href="#"> فیلم های سال 2011</a></li>
+                                <li class="serial"><a href="#"> فیلم های سال 2012</a></li>
+                                <li class="serial"><a href="#"> فیلم های سال 2013</a></li>
+                                <li class="serial"><a href="#"> فیلم های سال 2014</a></li>
+                                <li class="serial"><a href="#"> فیلم های سال 2015</a></li>
+                                <li class="serial"><a href="#"> فیلم های سال 2016</a></li>
+                                <li class="serial"><a href="#"> فیلم های سال 2017</a></li>
+                                <li class="serial"><a href="#"> فیلم های سال 2018</a></li>
+                                <li class="serial"><a href="#"> فیلم های سال 2019</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="sidebar-box-body clearfix">
+                            <div class="div-movie"><label for="">تفکیک ژانر</label></div>
+                            <ul>
+                                <li class="serial "><a href="#">اجتماعی </a></li>
+                                <li class="serial"><a href="#">اکشن</a></li>
+                                <li class="serial"><a href="#">بیوگرافی</a></li>
+                                <li class="serial"><a href="#">تاریخی</a></li>
+                                <li class="serial"><a href="#">تخیلی</a></li>
+                                <li class="serial"><a href="#">ترسناک</a></li>
+                                <li class="serial"><a href="#">جنایی</a></li>
+                                <li class="serial"><a href="#">جنگی</a></li>
+                                <li class="serial"><a href="#">خانوادگی</a></li>
+                                <li class="serial"><a href="#">عاشقانه</a></li>
+                                <li class="serial"><a href="#">تخیلی</a></li>
+                                <li class="serial"><a href="#">علمی</a></li>
+                                <li class="serial"><a href="#">کمدی</a></li>
+                                <li class="serial"><a href="#">ماجراجویی</a></li>
+                                <li class="serial"><a href="#">موزیکال</a></li>
+                                <li class="serial"><a href="#">هیجان انگیز</a></li>
+                                <li class="serial"><a href="#">ورزشی</a></li>
+                                <li class="serial"><a href="#">وسترن</a></li>
+                                <li class="serial"><a href="#">معمایی</a></li>
+                                <li class="serial"><a href="#">مستند</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sidebar-box-bg">
+                        <div class="sidebar-box-header">
+                            <h3>اخرین سریال های به روز شده</h3>
+                            <div class="sidebar-box-ser box-ser  clearfix">
+                                <ul>
+                                    <li class="serial-info "><a href="#"><img src="theme/images/Supergirl-Poster-.jpg" alt="">
+                                    </a></li>
+                                    <li class="serial-info ses-info">
+                                        <section>
+                                            <a href="#">
+                                                <span>دانلود سریال Supergirl</span>
+                                                <label class="chapter">فصل 5 قسمت12</label>
+                                            </a>
+                                        </section>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="sidebar-box-ser box-ser clearfix">
+                                <ul>
+                                    <li class="serial-info "><a href="#"><img src="theme/images/The.Outsider-203x300.jpg" alt="">
+                                    </a></li>
+                                    <li class="serial-info  ses-info">
+                                        <section>
+                                            <a href="#">
+                                                <span>دانلود سریال Supergirl</span>
+                                                <label class="chapter">فصل 5 قسمت12</label>
+                                            </a>
+                                        </section>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="sidebar-box-ser  box-ser clearfix">
+                                <ul>
+                                    <li class="serial-info "><a href="#"><img src="theme/images/batwomen.jpg" alt=""> </a></li>
+                                    <li class="serial-info ses-info">
+                                        <section>
+                                            <a href="#">
+                                                <span>دانلود سریال Supergirl</span>
+                                                <label class="chapter">فصل 5 قسمت12</label>
+                                            </a>
+                                        </section>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="sidebar-box-ser  box-ser clearfix">
+                                <ul>
+                                    <li class="serial-info "><a href="#"><img src="theme/images/strick.jpg" alt=""> </a></li>
+                                    <li class="serial-info ses-info">
+                                        <section>
+                                            <a href="#">
+                                                <span>دانلود سریال Supergirl</span>
+                                                <label class="chapter">فصل 5 قسمت12</label>
+                                            </a>
+                                        </section>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="sidebar-box-ser  clearfix">
+                                <ul>
+                                    <li class="serial-info "><a href="#"><img src="theme/images/o.gif" alt=""> </a></li>
+                                    <li class="serial-info ses-info">
+                                        <section>
+                                            <a href="#">
+                                                <span>دانلود سریال Supergirl</span>
+                                                <label class="chapter">فصل 5 قسمت12</label>
+                                            </a>
+                                        </section>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </aside>
+
+
+
+    </div>
+
+
+</main>
+
+
+<div class="clearfix"></div>
+
+<footer>
+    <div class="box-footer ml-3 mr-3">
+        <div class="container">
+            <div class="row">
+                <div class="box-footer-item col-12 col-md-4 col-lg-4 col-xl-4">
+                    <h3>اخرین پست ها</h3>
+                    <ul>
+                        <li><i></i><a href="#">اخرین سریال های به روز شده</a></li>
+                        <li><i></i><a href="#">فیلم های پیشنهادی</a></li>
+                        <li><i></i><a href="#">اخبار مقالات</a></li>
+                        <li><i></i><a href="#">فیلم های پیشنهادی</a></li>
+                        <li><i></i><a href="#">فیلم های پیشنهادی</a></li>
+                    </ul>
+                </div>
+                <div class="box-footer-item col-12 col-md-4 col-lg-4 col-xl-4">
+                    <h3>در باره ما</h3>
+                    <div class="about-us">
+                        <img src="images/logo.svg" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores explicabo fuga magni
+                            quidem saepe. Adipisci amet id inventore iure odit. Accusantium autem esse et natus porro,
+                            quas repellat sit soluta?</p>
+                        <ul>
+                            <li><a href="#"><i class="icon icon-telegram"></i></a></li>
+                            <li><a href="#"><i class="icon icon-facebook"></i></a></li>
+                            <li><a href="#"><i class="icon icon-instagram"></i></a></li>
+                            <li><a href="#"><i class="icon icon-linkin"></i></a></li>
+                            <li><a href="#"><i class="icon icon-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box-footer-item col-12 col-md-4 col-lg-4 col-xl-4">
+                    <h3>تماس با ما</h3>
+                    <div>
+                        <form action="">
+                            <input type="text" placeholder="name">
+                            <input type="email" placeholder="email">
+                            <textarea name="" cols="46" rows="5">your message</textarea>
+
+                        </form>
+                        <button>ارسال</button></div>
+
+                </div>
+            </div>
+            <div class="end-footer clearfix">
+                <div class="end-footer-item menu-footer float-right">
+                    <ul>
+                        <li><a href="#">خانه </a></li>
+                        <li><a href="#">منو</a></li>
+                        <li><a href="#">عضویت</a></li>
+                        <li><a href="#">آرشیو</a></li>
+                    </ul>
+                </div>
+                <div class="end-footer-item copyright float-left">
+                    <span>copyright @ 2020 starmovie</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<a href="#" onclick="topFunction()" id="back2Top" class="scrolltop"><i class="icon icon-arrow-up"></i></a>
+
+<script src="theme/js/jquery-3.1.1.min.js" type="text/javascript"></script>
+<script src="https://use.fontawesome.com/84c3f8fd28.js"></script>
+<script src="theme/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="theme/js/magicscroll.js"></script>
+
+
+</body>
+
+<script>
+    // start section nav menu
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "70%";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
+// start section myvideo
+    var vid = document.getElementById("myVideo");
+
+    function playVid() {
+        vid.play();
+    }
+
+    function pauseVid() {
+        vid.pause();
+    }
+
+    // start section form click
+    $(document).ready(function () {
+        $("#div").click(function () {
+            $("#btnout").slideToggle("slow");
+        });
+    });
+
+    /*Scroll to top when arrow up clicked BEGIN*/
+    $(window).scroll(function () {
+        var height = $(window).scrollTop();
+        if (height > 100) {
+            $('#back2Top').fadeIn();
+        } else {
+            $('#back2Top').fadeOut();
+        }
+    });
+    $(document).ready(function () {
+        $("#back2Top").click(function (event) {
+            event.preventDefault();
+            $("html, body").animate({scrollTop: 0}, "slow");
+            return false;
+        });
+
+    });
+    /*Scroll to top when arrow up clicked END*/
+</script>
+</html>

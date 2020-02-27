@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Star movie</title>
+
+    <link rel="stylesheet" href="themes/_shared/font-drsaina.css" type="text/css"/>
+    <link rel="stylesheet" href="themes/_shared/bootstrap-rtl.min.css" type="text/css"/>
+    <link rel="stylesheet" href="themes/_shared/font_IRANSans.css" type="text/css"/>
+
+    <link rel="stylesheet" href="theme/css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="theme/css/header-footer.css" type="text/css"/>
+    <!--    slider section code-->
+    <!--    animate css-->
+    <link rel="stylesheet" href="theme/css/animte.css" type="text/css"/>
+    <!--    fotnawsome.min-->
+    <link rel="stylesheet" href="theme/css/fontawsome.css" type="text/css">
+
+    <!--    slider section code-->
+
+    <!--    owl carsul-->
+    <link rel="stylesheet" href="theme/css/magicscroll.css" type="text/css">
+
+
+</head>
+<body>
+<Header>
+    <div class="menu-header">
+        <div class="container">
+            <div class="menu-box-header  clearfix  ">
+                <div class=" box-logo  float-right">
+                    <a href="#" class="">
+                        <span class="d-sm-inline-block d-md-none d-lg-none d-xl-none icon icon-hum-side-menu"
+                              onclick="openNav()"></span>
+                        <img src="theme/images/logo.svg" alt=""/>
+                    </a>
+                </div>
+
+                <div class="menu-box form-box float-left d-none d-xs-none d-sm-none  d-md-block d-lg-block d-xl-block">
+                    <nav>
+                        <ol>
+                            <li class="menu-box-item watch-list">
+                                <a href="#"
+                                   class="icon icon-hum-side-menu menu d-sm-none d-none  d-md-inline-block d-lg-inline-block d-xl-inline-block "
+                                   onclick="openNav()">منو</a>
+
+                            </li>
+                            <li class="menu-box-item watch-list"><a href="#">لیست فیلم ها</a></li>
+                            <li class="menu-box-item movie-star"><a href="#">استار مووی</a></li>
+                            <li class="menu-box-item sign-in"><a href="#"
+                                                                  onclick="document.getElementById('id01').style.display='block'"
+                                                                  style="width:auto;" id="sign-in">عضویت</a></li>
+                        </ol>
+                    </nav>
+                </div>
+
+            </div>
+
+            <div class="clearfix d-none d-xs-none d-sm-none  d-md-block d-lg-block d-xl-block nav-button ">
+                <div  class="float-right ">
+                    <input type="search" placeholder="search">
+                    <button class="btn btn-success">search</button>
+                </div>
+                <div  class="social float-left">
+                    <ul>
+                        <li><a href="#" class="icon icon-facebook"></a></li>
+                        <li><a href="#" class="icon icon-telegram"></a></li>
+                        <li><a href="#" class="icon icon-instagram"></a></li>
+                        <li><a href="#" class="icon icon-linkin"></a></li>
+                        <li><a href="#" class="icon icon-twitter"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+<!--strat section form search mobile-->
+        <div class="clearfix sign-in-mobile">
+            <div><a class=" d-sm-inline-block d-md-none d-lg-none d-xl-none float-left s-mobile"
+                    onclick="document.getElementById('id01').style.display='block'" style="width:auto;">عضویت</a>
+            </div>
+            <div>
+                <a class=" d-sm-inline-block d-md-none d-lg-none d-xl-none  float-left icon icon-search search"
+                   id="div"></a>
+
+            </div>
+
+        </div>
+
+    <form action="" id="btnout" style="display: none;" class="form-search">
+        <input type="search" placeholder="جستجو کنبد">
+        <button>جستجو کنید</button>
+    </form>
+    <!--    start sectio navigation menu-->
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="row">
+            <div class="col-md-4 box-nav-menu">
+                <i class="icon icon-video"></i>
+                <label>
+                    movie
+                </label>
+                <ul>
+                    <li><a href="#">Top Rated Movie</a>
+                    </li>
+                    <li><a href="#">Most Popular Movies</a></li>
+                    <li><a href="#">Top Box Office</a></li>
+                    <li><a href="#">Coming Soon</a></li>
+                    <li><a href="#">movie News</a></li>
+
+                </ul>
+            </div>
+            <div class="col-md-4 box-nav-menu">
+                <label>TV Show</label>
+                <ul>
+                    <li><a href="#">Top Rated Show</a>
+                    </li>
+                    <li><a href="#">Most Popular Shows</a></li>
+                    <li><a href="#">TV news</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 box-nav-menu">
+                <label>Awards & Events</label>
+                <ul>
+                    <li><a href="#">Oscars</a>
+                    </li>
+                    <li><a href="#">Best picture Winner</a></li>
+                    <li><a href="#">Golden Globes</a></li>
+                    <li><a href="#">Emmys</a></li>
+                    <li><a href="#">Awards Central</a></li>
+                    <li><a href="#">Festival Central</a></li>
+                    <li><a href="#">All Events</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()"></span>
+    <!--    start section sign-->
+    <!--    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>-->
+
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="theme/images/user-image.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container clearfix">
+                <label class="bg-color" for="uname"><b>Username</b></label>
+                <input class="" type="text" placeholder="Enter Username" name="uname" required>
+
+                <label class="bg-color" for="psw"><b>Password</b></label>
+                <input class="" type="password" placeholder="Enter Password" name="psw" required>
+                <label class="bg-color" for="psw"><b>email</b></label>
+                <input class="" type="password" placeholder="Enter Password" name="psw" required>
+
+                <button class="login" type="submit">Login</button>
+                <label class="bg-color"  style="margin-top: 10px;">
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+            <div class="container clearfix" style="">
+                <button  type="button"  onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn float-left">Cancel
+                </button>
+                <span class="psw float-right" style="color: #fff">?Forgot <a href="#">password</a></span>
+            </div>
+        </form>
+    </div>
+
+</Header>
+<main>
+    <!--    start section slider-->
+    <section>
+        <div class="slideshow-container">
+            <div class="slideshow-inner">
+                <div class="mySlides ">
+
+                    <img  src="theme/images/Mountain-Range.jpg" style="width: 100%;height: 500px"  alt="sally lightfoot crab"/>
+                    <div class="text">Sally Lightfoot Crab</div>
+                </div>
+
+                <div class="mySlides ">
+
+                    <img src="theme/images/Pink-Forest.jpg" style="width: 100%;height: 500px" alt="fighting nazca boobies"/>
+                    <div class="text">A scuffle between two Nazca Boobies</div>
+                </div>
+
+                <div class="mySlides ">
+
+                    <img  src="theme/images/Mountain-Range.jpg" style="width: 100%;height: 500px" alt="otovalo waterfall"/>
+                    <div class="text">A waterfall discovered on a hike in Otovalo</div>
+                </div>
+
+                <div class="mySlides ">
+
+                    <img  src="theme/images/Pink-Forest.jpg" style="width: 100%;height: 500px" alt="pelican"/>
+                    <div class="text">Pelican</div>
+                </div>
+
+            </div>
+
+
+            <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+            <a class="next" onclick='plusSlides(1)'>&#10095;</a>
+        </div>
+        <br/>
+
+
+        <div style='text-align: center;'>
+            <span class="dot" onclick='currentSlide(1)'></span>
+            <span class="dot" onclick='currentSlide(2)'></span>
+            <span class="dot" onclick='currentSlide(3)'></span>
+            <span class="dot" onclick='currentSlide(4)'></span>
+        </div>
+
+
+    </section>
+    <!--    start section project-->
+    <section>
+        <div class="movie-archive">
+            <div class="container">
+
+                <div class="movie-archive-box clearfix">
+                    <div class="Updated-series">
+                        <span>اخرین فیلم سریال های بروز شده</span>
+                    </div>
+                    <div class="Login-archive ">
+                        <a href="#">ورود به آرشیو</a>
+                    </div>
+                </div>
+                <div class="movies-box ">
+                    <div class="MagicScroll" data-options="mode: carousel; height: 200px;">
+                        <a href=""> <img src="theme/images/Homeland-Poster.jpg"/></a>
+                        <a href=""> <img src="theme/images/Homeland-Poster.jpg"/></a>
+                        <a href=""> <img src="theme/images/Homeland-Poster.jpg"/></a>
+                        <a href=""> <img src="theme/images/Homeland-Poster.jpg"/></a>
+                        <a href=""> <img src="theme/images/Homeland-Poster.jpg"/></a>
+                        <a href=""> <img src="theme/images/Homeland-Poster.jpg"/></a>
+                        <a href=""> <img src="theme/images/Homeland-Poster.jpg"/></a>
+                        <a href=""> <img src="theme/images/Homeland-Poster.jpg"/></a>
+
+
+                    </div>
+                </div>
+                <!--            start section tow-->
+
+                <div class="movie-archive-box clearfix">
+                    <div class="Updated-series">
+                        <span>فیلم پیشنهادی استار مووی به شما</span>
+                    </div>
+                    <div class="Login-archive ">
+                        <a href="#">ورود به آرشیو</a>
+                    </div>
+                </div>
+                <div class="movies-box ">
+                    <div class="MagicScroll" data-options="mode: carousel; height: 200px;">
+                        <a href=""> <img src="theme/images/Homeland-Poster.jpg"/></a>
+                        <a href=""> <img src="theme/images/Homeland-Poster.jpg"/></a>
+                        <a href=""> <img src="theme/images/Homeland-Poster.jpg"/></a>
+                        <a href=""> <img src="theme/images/Homeland-Poster.jpg"/></a>
+                        <a href=""> <img src="theme/images/Homeland-Poster.jpg"/></a>
+                        <a href=""> <img src="theme/images/Homeland-Poster.jpg"/></a>
+                        <a href=""> <img src="theme/images/Homeland-Poster.jpg"/></a>
+                        <a href=""> <img src="theme/images/Homeland-Poster.jpg"/></a>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+    <!--    start section Empleados-box-->
+    <section class="ml-3 mr-3">
+        <div class="Empleados-box">
+            <div class="container">
+                <div class="row">
+                    <div class="Empleados-box-header row col-12">
+                        <div class="col-md-4 Empleados-box-item">
+                            <div class="const">
+                                <i class="icon icon-user"></i>
+                                <label>مدیر سایت</label>
+                            </div>
+
+                            <p>شرکت ما با بکار گیری کادر مجرب آماده ارائه خدمات به شما مشتریان عزیز می شود</p>
+                        </div>
+                        <div class="col-md-4 Empleados-box-item">
+                            <div class="const">
+                                <i class="icon icon-comment"></i>
+                                <label>مدیر فنی</label>
+                            </div>
+
+                            <p>شرکت ما با بکار گیری کادر مجرب آماده ارائه خدمات به شما مشتریان عزیز می شود</p>
+                        </div>
+                        <div class="col-md-4 Empleados-box-item">
+                            <div class="const">
+                                <i class="icon icon-fiil-manager"></i>
+                                <label>اعضای تیم</label>
+                            </div>
+
+                            <p>شرکت ما با بکار گیری کادر مجرب آماده ارائه خدمات به شما مشتریان عزیز می شود</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="service-box">
+            <div class="container">
+                <div class="row">
+                    <div class="service-box-project ">
+                        <span class="">دانلود فیلم و سریال خارجی و ایرانی رایگان!</span>
+                        <button class="btn btn-info" style="width: unset;"> ادامه مطلب</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--    start section customer-box-->
+    <section class="ml-3 mr-3">
+        <div class="customer-box">
+            <div class="container">
+                <div class="row">
+                    <div class="customer-box-item col-md-4">
+                        <ul>
+                            <li class="user-img">
+                                <img src="theme/images/customer-1.jpg" alt="">
+                            </li>
+                            <li class="member-company">
+                                <label for="">هلیا افخمی</label>
+                                <span>کاربر </span>
+                            </li>
+                            <li>
+                                <p class="user-info">
+                                    سلام ممنون از وب سایت خوبتون من خیلی وقت بود دنبال سریال .... میگشتم اما پیدا
+                                    نمیکردم.....
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="customer-box-item col-md-4  ">
+                        <ul>
+                            <li class="user-img">
+                                <img src="theme/images/customer-2.jpg" alt="">
+                            </li>
+                            <li class="member-company">
+                                <label for=""> علیرضا اکبری</label>
+                                <span>کاربر</span>
+                            </li>
+                            <li>
+                                <p class="user-info">
+                                    سلام ممنون از وب سایت خوبتون من خیلی وقت بود دنبال فیلم .... میگشتم اما پیدا
+                                    نمیکردم.....
+
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="customer-box-item col-md-4 ">
+                        <ul>
+                            <li class="user-img">
+                                <img src="theme/images/customer-3.jpg" alt="">
+                            </li>
+                            <li class="member-company">
+                                <label for="">مهدی فردی </label>
+                                <span>کاربر</span>
+                            </li>
+                            <li>
+                                <p class="user-info">
+                                    سلام ممنون از وب سایت خوبتون من خیلی وقت بود دنبال انیمیشن .... میگشتم اما پیدا
+                                    نمیکردم.....
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+<footer>
+    <div class="box-footer ml-3 mr-3">
+        <div class="container">
+            <div class="row">
+                <div class="box-footer-item col-12 col-md-4 col-lg-4 col-xl-4">
+                    <h3>اخرین پست ها</h3>
+                    <ul>
+                        <li><i></i><a href="#">اخرین سریال های به روز شده</a></li>
+                        <li><i></i><a href="#">فیلم های پیشنهادی</a></li>
+                        <li><i></i><a href="#">اخبار مقالات</a></li>
+                        <li><i></i><a href="#">فیلم های پیشنهادی</a></li>
+                        <li><i></i><a href="#">فیلم های پیشنهادی</a></li>
+                    </ul>
+                </div>
+                <div class="box-footer-item col-12 col-md-4 col-lg-4 col-xl-4">
+                    <h3>در باره ما</h3>
+                    <div class="about-us">
+                        <img src="theme/images/logo.svg" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores explicabo fuga magni
+                            quidem saepe. Adipisci amet id inventore iure odit. Accusantium autem esse et natus porro,
+                            quas repellat sit soluta?</p>
+                        <ul>
+                            <li><a href="#"><i class="icon icon-telegram"></i></a></li>
+                            <li><a href="#"><i class="icon icon-facebook"></i></a></li>
+                            <li><a href="#"><i class="icon icon-instagram"></i></a></li>
+                            <li><a href="#"><i class="icon icon-linkin"></i></a></li>
+                            <li><a href="#"><i class="icon icon-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box-footer-item col-12 col-md-4 col-lg-4 col-xl-4">
+                    <h3>تماس با ما</h3>
+                    <div>
+                        <form action="">
+                            <input type="text" placeholder="name">
+                            <input type="email" placeholder="email">
+                            <textarea name="" cols="46" rows="5">your message</textarea>
+
+                        </form>
+                        <button style="width: unset;">ارسال</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="end-footer clearfix">
+                <div class="end-footer-item menu-footer float-right">
+                    <ul>
+                        <li><a href="#">خانه </a></li>
+                        <li><a href="#">منو</a></li>
+                        <li><a href="#">عضویت</a></li>
+                        <li><a href="#">آرشیو</a></li>
+                    </ul>
+                </div>
+                <div class="end-footer-item copyright float-left">
+                    <span>copyright @ 2020 starmovie</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<a href="#" onclick="topFunction()" id="back2Top" class="scrolltop"><i class="icon icon-arrow-up">
+
+</i></a>
+
+
+<script src="theme/js/jquery-3.1.1.min.js" type="text/javascript"></script>
+<script src="theme/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="theme/js/jquery.min.js" type="text/javascript"></script>
+<script src="theme/js/magicscroll.js"></script>
+<script src="theme/js/animate.js" type="text/javascript"></script>
+<script src="theme/js/slider.js" type="text/javascript"></script>
+
+
+</body>
+<script>
+    // start section nav menu
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "70%";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
+    // gallery scorrul
+    var MagicScrollOptions = {};
+    // animation
+    new WOW().init();
+
+    /*Scroll to top when arrow up clicked BEGIN*/
+    $(window).scroll(function () {
+        var height = $(window).scrollTop();
+        if (height > 100) {
+            $('#back2Top').fadeIn();
+        } else {
+            $('#back2Top').fadeOut();
+        }
+    });
+    $(document).ready(function () {
+        $("#back2Top").click(function (event) {
+            event.preventDefault();
+            $("html, body").animate({scrollTop: 0}, "slow");
+            return false;
+        });
+
+    });
+
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
+    // gallery scorrul
+    var MagicScrollOptions = {};
+    // animation
+    new WOW().init();
+
+
+    // start section form click
+    $(document).ready(function () {
+        $("#flip").click(function () {
+            $("#panel").slideToggle("slow");
+        });
+    });
+
+</script>
+
+</html>

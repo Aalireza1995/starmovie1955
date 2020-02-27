@@ -1,0 +1,273 @@
+/*-----------------History-Customers start----------------*/
+
+.History-Customers-box {
+    margin-top: 60px;
+}
+
+.History-Customers-box-item {
+}
+
+.History-Customers-box-item > img {
+    max-width: 100%;
+    max-height: 97%;
+}
+
+.History-Customers-box-item > label {
+    color: #0a4b71;
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.History-Customers-box-item > p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 19px;
+}
+
+.History-Customers-box-item > button {
+    margin-top: 8px;
+    font-size: 18px;
+    padding: 7px 40px 6px 40px;
+}
+
+.History-Customers-box {
+    margin-top: 20px;
+}
+
+
+/*start section comment box*/
+/*------------start section comment----------------*/
+
+.main-comment-box-header > h3 {
+
+    color: #040b1b;
+
+    margin: 8px 17px 12px 0;
+}
+
+.main-comment-box-header {
+    margin-top: 2em;
+}
+
+.main-comment-box {
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .09);
+    -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, .09);
+    -moz-box-shadow: 0 0 4px 0 rgba(0, 0, 0, .09);
+    -o-box-shadow: 0 0 4px 0 rgba(0, 0, 0, .09);
+    border-radius: .25rem;
+    padding: 1rem;
+}
+
+.user-image {
+    width: 36px;
+    height: 36px;
+    margin-left: 1rem;
+    display: inline-block;
+
+}
+
+.user-img>img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+.user-image > img {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.user-comment {
+    display: inline-block;
+
+}
+
+.user-comment > span {
+    color: rgba(0, 0, 0, .3);
+}
+
+.main-box-common-body {
+    background-color: #fff;
+}
+
+#btnout {
+    margin-top: 18px;
+}
+
+#panel {
+    margin-top: 1em;
+}
+
+#btnout > input {
+    margin: 0 0 16px 0;
+}
+
+#btnout > button {
+    margin-top: 1em;
+}
+
+#btnout > textarea {
+    margin-top: 1em;
+}
+
+.main-comment-box-form {
+    /*display: none;*/
+}
+
+.main-comment-box-form > form {
+}
+
+.main-comment-box-form > form > input {
+    display: block;
+    margin-top: 1.5em;
+}
+
+.main-comment-box-form > form > span {
+}
+
+.main-comment-box-form > form > textarea {
+    display: block;
+    margin-top: 1em;
+}
+
+.main-comment-box-form > form > button {
+    margin-top: 1em;
+}
+
+.main-box-answer {
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .09);
+    -box-shadow-box-shadow: 0 0 4px 0 rgba(0, 0, 0, .09);
+    -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, .09);
+    -o-box-shadow: 0 0 4px 0 rgba(0, 0, 0, .09);
+    border-radius: .25rem;
+    -webkit-border-radius: .25rem;
+    -o-border-radius: .25rem;
+    -moz-border-radius: .25rem;
+    padding: 1rem;
+    margin-bottom: 1em;
+}
+
+.user-answer {
+}
+
+.user-img {
+    display: inline-block;
+}
+
+.user-info {
+    display: inline-block;
+    position: relative;
+    top: 17px;
+}
+
+.user-image > img {
+}
+
+.user-info > h2 {
+    font-size: 18px;
+}
+
+.user-info > i {
+}
+
+.user-info > i:before {
+}
+
+.user-info > span {
+}
+
+.user-text {
+}
+
+.user-text > p {
+}
+
+.main-box-common-answer {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.comment-action {
+    display: inline-block;
+    float: left;
+    margin-top: 21px;
+}
+
+.main-box-common-answer > img {
+}
+
+.main-box-common-answer > h2 {
+}
+
+.main-box-common-answer > span {
+}
+
+.user-text {
+}
+
+.user-text > p {
+    text-align: justify;
+}
+
+.main-box-reply {
+    margin-right: 20%;
+
+}
+
+.comment {
+    background-color: #f8f9fa !important;
+    border: none !important;
+    box-shadow: none !important;
+    -o-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+#fadeout>input{
+    margin-top: 10px;
+}
+#fadeout>textarea{margin-top: 10px}
+#fadeout>button{margin-top: 10px}
+
+
+/*------box scroll up-----------*/
+#back2Top {
+    width: 53px;
+    overflow: hidden;
+    height: 35px;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    bottom: 30px;
+    right: 10px;
+    background-color: #e0a800;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+#back2Top:hover {
+}
+
+#back2Top > i {
+    margin-right: 16px;
+}
+
+#back2Top > i:before {
+    color: #fff;
+    font-size: 10px;
+
+}
+
+/*------box scroll up-----------*/
